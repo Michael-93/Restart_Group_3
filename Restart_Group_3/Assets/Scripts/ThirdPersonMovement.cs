@@ -6,7 +6,8 @@ public class ThirdPersonMovement : MonoBehaviour
 {
     public CharacterController controller;
     public Transform cam;
-
+    [SerializeField]
+    private Animator _anim;
     public float speed = 6f;
 
     public float turnSmoothTime = 0.1f;
@@ -28,6 +29,9 @@ public class ThirdPersonMovement : MonoBehaviour
 
             Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDirection.normalized * speed * Time.deltaTime);
+            _anim.SetBool("Running", true);
+           
         }
+        else { _anim.SetBool("Running", false); }
     }
 }

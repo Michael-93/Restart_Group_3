@@ -3,7 +3,35 @@ guid: db98eaeebfbb3af449d3f8710b9e4de4
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Countertop
+    second: {fileID: -5592730094718248486, guid: 81e773fbcb4a6e343995bbf7cb00dfd7,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Handles
+    second: {fileID: -8248527271470293232, guid: 36b519bbdbdb4ff428b0f0e0597e0b3e,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: aa9400369297673459c7cc7c4862d2d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sink
+    second: {fileID: -6388848508370422216, guid: 82931f5db48bbd240a6287006fb15666,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wooden cupboard
+    second: {fileID: 2100000, guid: 0725b7cf4c780e749890891fde52a128, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

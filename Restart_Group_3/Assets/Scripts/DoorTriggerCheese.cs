@@ -4,15 +4,16 @@ using UnityEngine;
 using UnityEngine.UI;
 public class DoorTriggerCheese : MonoBehaviour
 {
+    
     public bool cheeserequirementmet = false;
-    public static int cheeserequirement = 5;
+    public int cheeserequirement;
     public static int CheeseCount;
     public float smoothTime = 0.3F;
     private Vector3 velocity = Vector3.zero;
     public float x;
-    public Transform target;
     public float Doormovetime;
     public float TimeDoorStops;
+    
 
     [SerializeField]
     GameObject door;
@@ -29,7 +30,7 @@ public class DoorTriggerCheese : MonoBehaviour
 
         if (cheeserequirementmet == true && isOpened == true)
             {
-                
+               
             Vector3 targetPosition = door.transform.position + new Vector3(0, x, 0);
             door.transform.position = Vector3.SmoothDamp(door.transform.position, targetPosition, ref velocity, smoothTime);
             Doormovetime += Time.deltaTime;
@@ -37,7 +38,8 @@ public class DoorTriggerCheese : MonoBehaviour
             {
                 isOpened = false;
                 Destroy(door);
-
+                door = null;
+                
             }
         }
     }
